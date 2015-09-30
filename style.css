@@ -1,0 +1,348 @@
+/*
+Theme Name: Custom
+Theme URI: http://The-Web-Pros
+Description: A custom theme. 
+Author: Billie Matteo
+Author URI: http://the-web-pros.com
+Version: 1.0
+Tags:
+License:
+License URI:
+General comments (optional).
+*/
+/*                 */
+/*********************Body, global, and background******************/
+html{
+	background: #FFF;
+	background-image: url("");
+	background-repeat: repeat;
+	}
+
+body{
+	background: #FFF;
+	border: #000 5px solid;
+	border-radius: 10px;
+	color: #030;
+	display: block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 30px auto;
+	max-width: 980px;
+	padding: 20px 4%;
+	}
+
+h1, h2, h3{
+	color: #030;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+hgroup h1{
+	font-size: 2.5em;
+	visibility:hidden;
+}
+
+
+hgroup h2{
+	font-size: 1.7em;
+}
+
+h1 a, h2 a, hgroup h1 a {
+	color: #060;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover,h3 a:hover, hgroup h1 a:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+#searchform input#submit:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+hr{
+	border-color: #030;
+}
+
+img{
+	border-radius: 5px;
+}
+
+#imagefull, #imagefull img{
+	width: 100%;
+}
+
+hgroup{
+	background: #DFF;
+	background-image: url("");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 40%;
+	border: 2px solid #030;
+	border-radius: 8px;
+	font-family: Georgia, serif;
+	margin-top: 20px;
+	padding: 0 15px;
+	text-align:right;
+} 
+
+/**************Main Nav with dropdown****************************/
+#mainnav ul {
+	border-bottom: 2px solid #030;
+	display: inline-block;
+	text-align: left;
+	width: 95%;
+	margin-top: 3px;
+}
+#mainnav li a,
+#mainnav li {
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0 25px 0 0;
+	position: relative;
+	text-decoration: none;
+}
+#mainnav li a {
+	border-bottom: 0;
+	color: #060;
+	line-height: 3.7;
+}
+
+#mainnav li a:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+/*************Creates drop down menu************/
+#mainnav li ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 10px;
+	top: 100%;
+	z-index: 10;
+}
+
+#mainnav ul li:hover > ul {
+	border-left: 0;
+	display: block;
+	border-bottom:none;
+}
+
+#mainnav li ul li a {
+	background: #DFF;
+	border-bottom: 1px solid #030;
+	display: block;
+	font-size: 1em;
+	line-height: 2.18;
+	padding: 8px 10px;
+	width: 150px;
+}
+
+#mainnav li ul li a:hover {
+	background: #cee;
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+/****Toggles dropdown menu visability for About items*/
+.about{
+	visibility: hidden;
+}
+#about:hover .about{
+	visibility: visible;
+} 
+
+nav.breadcrumb a{ /************Breadcrumb nav*********/
+	text-decoration: none;
+	color: #030;
+}
+
+nav.breadcrumb a:hover{ /************Breadcrumb nav*********/
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+/********************Main Content*********************/
+#centerText{
+	text-align: center;
+}
+
+#content{
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	min-width: 440px;
+	width: 65.2%;
+}
+
+#content img{
+	margin:10px;
+}
+
+#content ul{
+	list-style-type: none;
+}
+
+#content ul a, #content .comments a{
+	font-weight: normal;
+	color: #060;
+	text-decoration: none;
+}
+
+#content .comments{
+	margin-bottom: 20px;
+}
+
+#content .comments img{
+	margin-top: 10px;
+}
+
+
+#content ul a:hover, #content .comments a:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+.block{/*******A content class designed for contacts*/
+	border-top: 2px solid #030;
+	clear: left;
+	display: block;
+	float: left;
+	height: inherit;
+	margin: 20px 0;
+	width: 100%;
+}
+
+#content .profile{/*An image class for profile pics in contacts(has to replace WP class)*/
+	float: left;
+	height: inherit;
+	margin-right: 20px;
+	width: 165px;
+}
+
+#content a{
+	color: #060;
+	text-decoration: none;
+}
+
+#content a:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+#content .postnav a{
+	background-image: url("images/");
+	background-repeat: repeat-x;
+	border: #030 1px solid;
+	border-radius: 5px;
+	color: #030;
+	margin: 0 10px;
+	padding: 0 5px;
+	text-decoration: none;
+}
+
+#content .postnav a:hover{
+	background-image: url("images/");
+	background-repeat: repeat-x;
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+#content .author{
+	background: #DFF;
+	background-image: url("images/");
+	background-position: right;
+	background-repeat:no-repeat;
+	background-size: 38%;
+	padding: 8px;
+	border: 1px solid #030;
+	border-radius: 8px;
+}
+
+#content .author img{
+	float: left;
+	margin-right: 20px;
+}
+
+#content .alignnone{/*An image class that fills the element 100%(used as default)*/
+	height: inherit;
+	width: 100%;
+}
+
+#sidebar{
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+	min-width: 150px;
+	padding-left: 3.2%;
+	width: 30%;
+}
+
+#sidebar a{
+	color: #060;
+	text-decoration: none;
+}
+
+#sidebar a:hover{
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF;
+}
+
+#sidebar ul{
+	margin-left: -20px;
+}
+
+#whole{
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	min-width: 400px;
+	width: 100%;
+}
+
+/*************************footer***************************/
+#footer{
+	background: #DFF;
+	background-image: url("images/");
+	background-position: left;
+	background-repeat:no-repeat;
+	background-size: 25%;
+	border: 2px solid #030;
+	border-radius: 8px;
+	clear: both;
+	height: 80px;
+	margin-bottom: 10px;
+	margin-left: -11px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+#footer cite{
+	font-size: .9em;
+}
+
+#footer a{
+	background-image: url("images/");
+	background-repeat: repeat-x;
+	border: #030 1px solid;
+	border-radius: 5px;
+	color: #030;
+	float: right;
+	padding: 0 5px;
+	text-decoration: none;
+	margin:10px 2px;
+}
+
+#footer a:hover{
+	background-image: url("images/");
+	background-repeat: repeat-x;
+	color: #00F;
+	text-shadow: 0px 0px 2px #6FF; 
+	}
